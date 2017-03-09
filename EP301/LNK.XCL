@@ -1,0 +1,78 @@
+-!                 -lnkh83v3.xcl-
+
+    XLINK 4.xx command file to be used with the H8300 C-compiler V3.xx
+    using the (default) -ml option (large memory model).
+    Usage: xlink your_file(s) -f lnkh83v3 -o your_output_file
+
+    First define CPU  -!
+
+-cH8300h
+
+-!  Allocate segments which should be loaded -!
+
+-Z(BIT)BITVARS=7FFF800-7FFF87F
+
+-!  First allocate the read only segments . -!
+
+-Z(CODE)INTVEC,IFLIST,FLIST=0-FF
+-Z(CODE)RCODE,CODE,CDATA0,CDATA1,CDATA2,CDATA3,ZVECT,CONST,CSTR,CCSTR=100
+
+-!  Then the writeable segments which must be mapped to a RAM area -!
+
+-Z(HUGE)DATA3,IDATA3,UDATA3,ECSTR,WCSTR,TEMP=200000
+-Z(FAR)DATA2,IDATA2,UDATA2
+-Z(FAR)DATA1,IDATA1,UDATA1
+-Z(HUGE)no_init
+-Z(HUGE)not_used
+-Z(HUGE)SavedData=21DFE0
+-Z(HUGE)CSTACK+2000=21E000
+-Z(NEAR)CSIP1=FF8000
+-Z(NEAR)CSOP1=FF8100
+-Z(NEAR)CSOP2=FF8200
+-Z(NEAR)CSDISPLAY=FF8300
+-Z(NEAR)CSCAN=FF8400
+-Z(NEAR)H8RAM=FFFD10
+-Z(FAR)DATA0,IDATA0,UDATA0,SHORTAD=FFFF00
+
+-! See configuration section concerning printf/sprintf -!
+-! -e_small_write=_formatted_write -!
+
+-! See configuration section concerning scanf/sscanf -!
+-! -e_medium_read=_formatted_read  -!
+
+bytedef
+epl_int
+epl_hdw
+epl_232
+epl_CAN
+
+epl_000
+epl_001
+epl_002
+epl_003
+epl_004
+epl_005
+epl_010
+epl_011
+
+epl_lan0
+epl_lan1
+epl_lan2
+
+bm_baler
+bm_f1all
+bm_f1eur
+bm_f1cyr
+bm_fnt2
+bm_fnt3
+bm_sym
+bm_key
+
+-!  Now load the 'C' library -!
+-! clh83ld3  long int, double float -!
+-! clh83lf3  long int, float -!
+-! short int, float -!
+clh83sf3
+
+-! Default Code will now reside in file aout.a20 in Motorola 'S' format -!
+

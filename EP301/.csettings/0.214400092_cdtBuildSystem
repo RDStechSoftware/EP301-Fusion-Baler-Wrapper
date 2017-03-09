@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 5.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage2">
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<configuration artifactName="${ProjName}" buildProperties="" description="" errorParsers="org.eclipse.cdt.IAR.errorparser.IARerrorparser;org.eclipse.cdt.core.MakeErrorParser" id="0.214400092" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+			<folderInfo id="0.214400092." name="/" resourcePath="">
+				<toolChain errorParsers="" id="org.eclipse.cdt.build.core.prefbase.toolchain.96329149" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+					<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.96329149.885065965" name=""/>
+					<builder errorParsers="" id="org.eclipse.cdt.build.core.settings.default.builder.1176000843" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+					<tool errorParsers="" id="org.eclipse.cdt.build.core.settings.holder.libs.1560742967" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+					<tool errorParsers="" id="org.eclipse.cdt.build.core.settings.holder.297511157" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+						<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.841476357" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+							<listOptionValue builtIn="false" value="&quot;C:\H8\IAR\INC&quot;"/>
+							<listOptionValue builtIn="false" value="&quot;C:\H8\IAR\LIB&quot;"/>
+						</option>
+						<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.336445738" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+					</tool>
+					<tool errorParsers="" id="org.eclipse.cdt.build.core.settings.holder.599438292" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+						<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.49801666" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+							<listOptionValue builtIn="false" value="&quot;C:\H8\IAR\INC&quot;"/>
+							<listOptionValue builtIn="false" value="&quot;C:\H8\IAR\LIB&quot;"/>
+						</option>
+						<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.7377661" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+					</tool>
+					<tool errorParsers="" id="org.eclipse.cdt.build.core.settings.holder.866990583" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+						<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.357431078" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+							<listOptionValue builtIn="false" value="&quot;C:\H8\IAR\INC&quot;"/>
+							<listOptionValue builtIn="false" value="&quot;C:\H8\IAR\LIB&quot;"/>
+						</option>
+						<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.293709827" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+					</tool>
+				</toolChain>
+			</folderInfo>
+		</configuration>
+	</storageModule>
+</cproject>

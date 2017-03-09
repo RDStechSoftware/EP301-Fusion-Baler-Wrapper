@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/0.214400092/C_INCLUDE/delimiter=;
+environment/project/0.214400092/C_INCLUDE/operation=append
+environment/project/0.214400092/C_INCLUDE/value=C\:\\h8\\iar\\inc\\
+environment/project/0.214400092/PATH/delimiter=;
+environment/project/0.214400092/PATH/operation=replace
+environment/project/0.214400092/PATH/value=C\:\\msys\\1.0\\bin;C\:\\GNUARM-460_EABI\\bin;C\:\\H8\\IAR\\EXE
+environment/project/0.214400092/XLINK_DFLTDIR/delimiter=;
+environment/project/0.214400092/XLINK_DFLTDIR/operation=append
+environment/project/0.214400092/XLINK_DFLTDIR/value=C\:\\h8\\iar\\lib\\
+environment/project/0.214400092/append=true
+environment/project/0.214400092/appendContributed=true

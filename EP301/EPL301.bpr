@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="EPL301.exe"/>
+    <OBJFILES value="EPL301.obj Unit1.obj Unit2.obj EPL_LAN2.obj BM_BALER.obj BM_F1ALL.obj 
+      BM_F1CYR.obj BM_F1EUR.obj BM_FNT2.obj BM_FNT3.obj BM_KEY.obj BM_SYM.obj 
+      BYTEDEF.obj EPL_000.obj EPL_001.obj EPL_002.obj EPL_003.obj EPL_004.obj 
+      EPL_005.obj EPL_010.obj EPL_011.obj EPL_232.obj EPL_HDW.obj EPL_INT.obj 
+      EPL_LAN0.obj EPL_LAN1.obj EPL_CAN.obj"/>
+    <RESFILES value="EPL301.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Unit1.dfm Unit2.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG;WINDOWS"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="EPL301.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;."/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-sus -w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-vGc -vGt -vGd -Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k 
+      -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="cg32.lib $(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="EPL301.res" FORMNAME="" UNITNAME="EPL301.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL301.cpp" FORMNAME="" UNITNAME="EPL301" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit1.cpp" FORMNAME="ProSeries" UNITNAME="Unit1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="FormAbout" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PROTO.H" FORMNAME="" UNITNAME="PROTO.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BITMAPS.H" FORMNAME="" UNITNAME="BITMAPS.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_F1ALL.H" FORMNAME="" UNITNAME="BM_F1ALL.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BYTEDEF.H" FORMNAME="" UNITNAME="BYTEDEF.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_LAN0.H" FORMNAME="" UNITNAME="EPL_LAN0.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_LAN1.H" FORMNAME="" UNITNAME="EPL_LAN1.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_LAN2.H" FORMNAME="" UNITNAME="EPL_LAN2.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_LAN2.C" FORMNAME="" UNITNAME="EPL_LAN2.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_BALER.C" FORMNAME="" UNITNAME="BM_BALER.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_F1ALL.C" FORMNAME="" UNITNAME="BM_F1ALL.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_F1CYR.C" FORMNAME="" UNITNAME="BM_F1CYR.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_F1EUR.C" FORMNAME="" UNITNAME="BM_F1EUR.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_FNT2.C" FORMNAME="" UNITNAME="BM_FNT2.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_FNT3.C" FORMNAME="" UNITNAME="BM_FNT3.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_KEY.C" FORMNAME="" UNITNAME="BM_KEY.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BM_SYM.C" FORMNAME="" UNITNAME="BM_SYM.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BYTEDEF.C" FORMNAME="" UNITNAME="BYTEDEF.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_000.C" FORMNAME="" UNITNAME="EPL_000.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_001.C" FORMNAME="" UNITNAME="EPL_001.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_002.C" FORMNAME="" UNITNAME="EPL_002.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_003.C" FORMNAME="" UNITNAME="EPL_003.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_004.C" FORMNAME="" UNITNAME="EPL_004.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_005.C" FORMNAME="" UNITNAME="EPL_005.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_010.C" FORMNAME="" UNITNAME="EPL_010.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_011.C" FORMNAME="" UNITNAME="EPL_011.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_232.C" FORMNAME="" UNITNAME="EPL_232.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_HDW.C" FORMNAME="" UNITNAME="EPL_HDW.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_INT.C" FORMNAME="" UNITNAME="EPL_INT.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_LAN0.C" FORMNAME="" UNITNAME="EPL_LAN0.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_LAN1.C" FORMNAME="" UNITNAME="EPL_LAN1.C" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EPL_CAN.C" FORMNAME="" UNITNAME="EPL_CAN" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2057
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files (x86)\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+c:\program files (x86)\borland\cbuilder6\Bin\dcl31w60.bpl=Delphi 1.0 Compatibility Components
+C:\Program Files (x86)\Borland\CBuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
+c:\program files (x86)\borland\cbuilder6\Bin\dclclxdb60.bpl=Borland CLX Database Components
+
+[HistoryLists\hlIncludePath]
+Count=18
+Item0=$(BCB)\include;$(BCB)\include\vcl;.
+Item1=$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\include;$(BCB)\include\vcl;.;..\.
+Item3=$(BCB)\include;$(BCB)\include\vcl;..\EP301
+Item4=C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;..\EP301;..\EPL301
+Item5=C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item6=C:\Eclipse;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Software\H8\EPL\EP300;D:\Software\H8\EPL\EP300
+Item7=C:\Eclipse;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Software\H8\EPL\EP300
+Item8=C:\Eclipse;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item9=D:\Eclipse;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\Software\H8\EPL\EP300
+Item10=C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\Software\H8\EPL\EP300
+Item11=EP300;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item12=D:\Software\CBuilder\ProSim\EPL301;..\..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item13=D:\Software\ProSim\EPL301;..\..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item14=D:\Software\ProSim\EPL301;..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item15=..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\ProSim\EPL301;$(BCB)\include;$(BCB)\include\vcl
+Item16=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\ProSim\EPL301;$(BCB)\include;$(BCB)\include\vcl
+Item17=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\ProSim\EPL301;D:\Software\H8\PRO\EPL301;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=8
+Item0=$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Eclipse;$(BCB)\lib\obj;$(BCB)\lib
+Item2=D:\Eclipse;$(BCB)\lib\obj;$(BCB)\lib
+Item3=EP300;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\CBuilder\ProSim\EPL301;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\ProSim\EPL301;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\..\H8\PRO\EPL301;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\ProSim\EPL301;$(BCB)\lib\obj;$(BCB)\lib
+Item7=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Software\ProSim\EPL301;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_DEBUG;WINDOWS
+Item1=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=1
+  </IDEOPTIONS>
+</PROJECT>
